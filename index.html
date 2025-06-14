@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AngularJS Certification Training in Mumbai | JustAcademy</title>
-    <meta name="description" content="Get certified in AngularJS with JustAcademy's professional training in Mumbai. Hands-on learning, expert instructors, and job placement assistance.">
-    <meta name="keywords" content="AngularJS training, AngularJS certification, Certified AngularJS course, AngularJS Mumbai, web development training, AngularJS certification Mumbai, AngularJS classes">
+    <meta name="description" content="Enroll in AngularJS Certification Training in Mumbai. Get certified with hands-on projects, expert instructors, and placement assistance.">
+    <meta name="keywords" content="AngularJS Training Mumbai, AngularJS Certification, Certified AngularJS Course, AngularJS Classes Mumbai, Learn AngularJS Mumbai">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <style>
@@ -15,7 +15,6 @@
             --accent: #FF6B6B;
             --light: #F8F9FA;
             --dark: #212529;
-            --success: #28A745;
             --highlight: rgba(181, 29, 116, 0.1);
         }
         
@@ -184,7 +183,7 @@
         .section-title h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 2.5rem;
-            color: white
+            color: var(--secondary);
             margin-bottom: 15px;
         }
         
@@ -322,6 +321,40 @@
             color: white;
         }
         
+        /* Stats Section */
+        .stats {
+            padding: 60px 0;
+            background: var(--light);
+            text-align: center;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .stat-item {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(181, 29, 116, 0.1);
+        }
+        
+        .stat-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
         /* Contact Section */
         .contact {
             padding: 80px 0;
@@ -332,6 +365,8 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
         }
         
         .contact-info {
@@ -379,41 +414,6 @@
             margin-bottom: 5px;
         }
         
-        .contact-form {
-            background: var(--light);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        
-        .form-group input, 
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1rem;
-            transition: all 0.3s;
-        }
-        
-        .form-group input:focus, 
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(181, 29, 116, 0.2);
-        }
-        
         /* Footer */
         footer {
             background: var(--secondary);
@@ -436,6 +436,30 @@
         
         .footer-logo span {
             color: var(--primary);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
         }
         
         .copyright {
@@ -584,8 +608,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
-                    <h3>Job Placement</h3>
-                    <p>Get dedicated placement assistance with our network of 500+ hiring partners.</p>
+                    <h3>Placement Assistance</h3>
+                    <p>Get dedicated placement support with our network of hiring partners.</p>
                 </div>
             </div>
         </div>
@@ -640,6 +664,35 @@
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>Our <span>Success</span> Metrics</h2>
+                <p>Join thousands of successful graduates</p>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-item animated delay-1">
+                    <i class="fas fa-user-graduate stat-icon"></i>
+                    <div>500+ Students Trained</div>
+                </div>
+                <div class="stat-item animated delay-2">
+                    <i class="fas fa-handshake stat-icon"></i>
+                    <div>50+ Hiring Partners</div>
+                </div>
+                <div class="stat-item animated delay-1">
+                    <i class="fas fa-laptop-code stat-icon"></i>
+                    <div>100% Practical Learning</div>
+                </div>
+                <div class="stat-item animated delay-2">
+                    <i class="fas fa-chart-line stat-icon"></i>
+                    <div>95% Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="contact">
         <div class="container">
@@ -689,29 +742,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="contact-form animated delay-2">
-                    <h3>Send us a message</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="Enter your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="Enter your email">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" placeholder="Enter your phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" placeholder="Your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
@@ -724,6 +754,13 @@
                     Just<span>Academy</span>
                 </div>
                 <p>Premier AngularJS Training Institute in Mumbai</p>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
                 
                 <div class="cta-buttons" style="margin: 30px 0;">
                     <a href="https://www.justacademy.co/course-detail/angular-training" class="btn btn-primary">
@@ -748,7 +785,7 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.visibility = 'visible';
-                        entry.target.classList.add(entry.target.dataset.animation);
+                        entry.target.classList.add('fadeInUp');
                     }
                 });
             }, {
